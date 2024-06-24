@@ -30,7 +30,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             textAlign: TextAlign.center,
           ),
         ),
-        body: Stack(
+        body: const Stack(
           children: [
             Text('Perfil')
           ],

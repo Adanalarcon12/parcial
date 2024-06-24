@@ -1,3 +1,5 @@
+import 'package:controldegastosapp/screens/egresos.dart';
+import 'package:controldegastosapp/screens/ingrsos.dart';
 import 'package:controldegastosapp/widgets/daylingtab.dart';
 import 'package:controldegastosapp/widgets/graficoshome.dart';
 import 'package:controldegastosapp/widgets/weekly.dart';
@@ -15,8 +17,8 @@ class HomeDataScreen extends StatefulWidget {
 class _HomeDataScreenState extends State<HomeDataScreen> with SingleTickerProviderStateMixin{
 
   static const List<Tab> myTabs = <Tab>[
-    Tab(text: 'Diario'),
-    Tab(text: 'Semanal'),
+    Tab(text: 'Ingreso'),
+    Tab(text: 'Egreso'),
   ];
 
   late TabController _tabController;
@@ -61,8 +63,9 @@ class _HomeDataScreenState extends State<HomeDataScreen> with SingleTickerProvid
           body: TabBarView(
           controller: _tabController,
           children: [
-            DailyTabScreen(),
-            WeeklyScreen()
+           IncomePage(),
+           ExpensePage()
+            
            
           ]
         ),

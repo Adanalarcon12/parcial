@@ -20,7 +20,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           backgroundColor: AppTheme.primary,
           centerTitle: true,
           toolbarHeight: 100,
-          title: const Text('Historial',
+          title: const Text('Grafico',
             style: TextStyle(
               color: AppTheme.Onsecondary,
               fontWeight: FontWeight.bold,
@@ -30,9 +30,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
             textAlign: TextAlign.center,
           ),
         ),
-        body: Stack(
+        body: const Stack(
           children: [
-            Text('Historial')
+            Text('Egreso')
           ],
           ),
         bottomNavigationBar: BottomNavigationBar(
@@ -43,7 +43,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           ),
            BottomNavigationBarItem(
             icon: Icon(Icons.history),
-            label: 'History',
+            label: 'Grafico',
           ),
            BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
@@ -57,7 +57,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
             case 0:
               Navigator.popAndPushNamed(context, 'home');
             case 1:
-              Navigator.popAndPushNamed(context, 'history');
+              Navigator.popAndPushNamed(context, 'Grafico');
             case 2:
               Navigator.popAndPushNamed(context, 'profile');
           }

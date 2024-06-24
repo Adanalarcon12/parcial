@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "869560800451",
+    "project_id": "gastosapp-90914",
+    "storage_bucket": "gastosapp-90914.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869560800451:android:8828bd4de5f43b474cfe76",
+        "android_client_info": {
+          "package_name": "com.example.controldegastosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHsOzShdrMLgPVmv_PXbj3jAOjxlz2YFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

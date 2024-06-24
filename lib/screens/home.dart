@@ -29,24 +29,21 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           backgroundColor: AppTheme.primary,
           centerTitle: true,
-          toolbarHeight: 100,
+          toolbarHeight: 30,
           title: const Text('Bienvenido',
             style: TextStyle(
               color: AppTheme.Onsecondary,
               fontWeight: FontWeight.bold,
               fontSize: 24,
-              height: 80,
+              height: 40,
             ),
             textAlign: TextAlign.center,
           ),
         ),
-        body: Stack(
+        body: const Stack(
           children: [
-            Headerhome(),
-             SizedBox(
-                  width:80,
-                  height: 180,
-                ),
+            
+            
             HomeDataScreen() 
           ],
           ),
@@ -58,8 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Home',
           ),
            BottomNavigationBarItem(
-            icon: Icon(Icons.history),
-            label: 'History',
+            icon: Icon(Icons.elevator),
+            label: 'Grafico',
           ),
            BottomNavigationBarItem(
             icon: Icon(Icons.account_circle_outlined),
@@ -74,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
             case 0:
               Navigator.popAndPushNamed(context, 'home');
             case 1:
-              Navigator.popAndPushNamed(context, 'history');
+              Navigator.popAndPushNamed(context, 'Grafico');
             case 2:
               Navigator.popAndPushNamed(context, 'profile');
           }

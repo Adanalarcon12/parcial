@@ -1,19 +1,20 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
-class LoginFormProvider extends ChangeNotifier{
-
-  GlobalKey<FormState> formLogingKey = new GlobalKey<FormState>();
+class LoginFormProvider extends ChangeNotifier {
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   String email = '';
   String password = '';
 
-  bool isLoading = false;
+  bool _isLoading = false;
+  bool get isLoading => _isLoading;
 
-  bool isValidForm(){
-    
-    return formLogingKey.currentState?.validate()?? false;
+  set isLoading(bool value) {
+    _isLoading = value;
+    notifyListeners();
   }
 
+  bool isValidForm() {
+    return formKey.currentState?.validate() ?? false;
+  }
 }
